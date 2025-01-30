@@ -25,15 +25,17 @@ A **ROS 2 (Humble)** package for fusing IMU and magnetometer data into a stable 
 
 ## Usage
 
-1. **Install** or **Clone** the Fusion library:
-   - Copy the necessary headers (.h) from the [Fusion repo](https://github.com/xioTechnologies/Fusion) into the `include/Fusion/` directory of this package.  
-   - If there are `.c` files, either place them in `src/fusion_lib/` or link them as a static library.
+1. **Install** or **Clone** the the library:
+   ```bash
+   cd your_ros2_ws/src
+   git clone --recursive https://github.com/TPODAvia/imu_fusion_ros.git
+   ```
 
 2. **Build** the workspace:
 
    ```bash
    cd your_ros2_ws
-   colcon build
+   colcon build --symlink-install
    source install/setup.bash
    ```
 

@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+
+  imu_fusion:
+    build:
+      context: .
+      dockerfile: Dockerfile.ros2
+    container_name: imu_fusion
+    volumes:
+      - ./imu_fusion_ros:/ros2_ws/src/imu_fusion_ros:rw
+    networks:
+      - ros
+
+networks:
+  ros:
+    external: false

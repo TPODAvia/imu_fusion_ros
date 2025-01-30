@@ -1,0 +1,20 @@
+# Dockerfile.ros2
+FROM ros:humble-ros-base
+SHELL ["/bin/bash", "-c"]
+
+# 1) Install build tools
+RUN apt-get update && apt-get install -y \
+    git \
+    python3-colcon-common-extensions \
+    && rm -rf /var/lib/apt/lists/*
+
+# 2) Create a colcon workspace
+WORKDIR /ros2_ws
+RUN mkdir src
+
+# 3) Copy your local entrypoint script into the container
+COPY ros_entrypoint.sh /ros_entrypoint.sh
+RUN chmod +x /ros_entrypoint.sh
+
+# 4) Entry point
+ENTRYPOINT ["/ros_entrypoint.sh"]

@@ -1,0 +1,4 @@
+string calib_type  # "mag", "accel", "gyro", "heading", "all", etc.
+---
+bool success
+string message

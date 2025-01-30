@@ -1,0 +1,19 @@
+gyroscope_misalignment: [1.0, 0.0, 0.0,
+                         0.0, 1.0, 0.0,
+                         0.0, 0.0, 1.0]
+
+gyroscope_sensitivity: [1.0, 1.0, 1.0]
+gyroscope_offset: [0.0, 0.0, 0.0]
+
+accelerometer_misalignment: [1.0, 0.0, 0.0,
+                             0.0, 1.0, 0.0,
+                             0.0, 0.0, 1.0]
+
+accelerometer_sensitivity: [1.0, 1.0, 1.0]
+accelerometer_offset: [0.0, 0.0, 0.0]
+
+soft_iron_matrix: [1.0, 0.0, 0.0,
+                   0.0, 1.0, 0.0,
+                   0.0, 0.0, 1.0]
+
+hard_iron_offset: [0.0, 0.0, 0.0]

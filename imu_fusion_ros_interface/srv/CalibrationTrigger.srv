@@ -1,0 +1,6 @@
+# Request
+string calibration_type
+---
+# Response
+bool success
+string message
